@@ -14,23 +14,26 @@
     />
     <link rel="icon" type="image/png" href="./images/favicon.png" />
   </head>
+
   <body class="m-0 p-0">
     <!-- home-page  -->
-    <header
-      class="w-full relative min-h-screen bg-[url('./images/gym-profile.png')] bg-cover bg-center bg-no-repeat lg:bg-right text-white overflow-hidden"
+    <nav
+      class="w-full relative min-h-screen bg-[url('./images/gym-profile.jpg')] bg-cover bg-center bg-no-repeat lg:bg-right text-white overflow-hidden"
     >
       <div class="absolute inset-0 bg-black/60 z-0"></div>
 
       <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div
-          class="flex flex-col lg:flex-row lg:items-center lg:justify-between py-4 px-5 gap-4"
+          class="flex lg:flex-row lg:items-center lg:justify-between py-6 px-8 gap-6 md:py-4 md:px-5 md:gap-4"
         >
-          <div class="flex flex-col items-center lg:items-start shrink-0">
-            <a href="#" class="flex flex-col items-center lg:items-start">
+          <div
+            class="block md:flex flex-row items-center lg:items-start shrink-0"
+          >
+            <a href="index.html" class="items-center lg:items-start">
               <img
+                class="w-auto h-[45px] sm:h-[50px] md:h-[55px] lg:h-[60px] transition-transform duration-500 hover:scale-105"
                 src="images/elite logo.png"
                 alt="Elite Fitness Gym Logo"
-                class="w-auto h-[45px] sm:h-[50px] md:h-[55px] lg:h-[60px]"
               />
 
               <h2
@@ -41,58 +44,49 @@
             </a>
           </div>
 
-          <nav
-            class="w-full lg:w-auto grid grid-cols-2 sm:grid-cols-4 lg:flex lg:items-center gap-2 sm:gap-3 md:gap-5 lg:gap-8 text-sm md:text-base lg:text-lg font-bold text-center"
+          <div
+            class="w-full lg:w-auto hidden md:flex lg:items-center gap-2 sm:gap-3 md:gap-5 lg:gap-8 text-sm md:text-base lg:text-lg font-bold text-center"
           >
             <a
-              href="#"
-              class="px-3 py-2 rounded hover:bg-white hover:text-black transition duration-300 whitespace-nowrap"
-            >
-              HOME
-            </a>
-
-            <a
-              href="#"
+              href="gallery.html"
+              target="_blank"
               class="px-3 py-2 rounded hover:bg-white hover:text-black transition duration-300 whitespace-nowrap"
             >
               GALLERY
             </a>
 
             <a
-              href="#"
+              href="membership.html"
+              target="_blank"
               class="px-3 py-2 rounded hover:bg-white hover:text-black transition duration-300 whitespace-nowrap"
             >
               MEMBERSHIP
             </a>
             <a
-              href="#"
+              href="reviews.html"
+              target="_blank"
               class="px-3 py-2 rounded hover:bg-white hover:text-black transition duration-300 whitespace-nowrap"
             >
               REVIEWS
             </a>
             <a
-              href="#"
+              href="location.html"
+              target="_blank"
               class="px-3 py-2 rounded hover:bg-white hover:text-black transition duration-300 whitespace-nowrap"
             >
               LOCATION
             </a>
+          </div>
 
+          <button class="flex justify-center lg:justify-end lg:ml-6 shrink-0">
             <a
-              href="#"
-              class="px-3 py-2 rounded hover:bg-white hover:text-black transition duration-300 whitespace-nowrap"
-            >
-              CONTACT US
-            </a>
-          </nav>
-
-          <div class="flex justify-center lg:justify-end lg:ml-6 shrink-0">
-            <a
-              href="#"
+              href="book-slot.html"
+              target="_blank"
               class="flex items-center justify-center bg-[#ff8e28] text-white w-[160px] sm:w-[170px] md:w-[180px] lg:w-[160px] h-[45px] sm:h-[48px] font-bold text-xs sm:text-sm hover:bg-white hover:text-black transition-transform duration-500 ease-in-out hover:scale-105"
             >
               BOOK YOUR SLOT
             </a>
-          </div>
+          </button>
         </div>
       </div>
 
@@ -132,26 +126,26 @@
             </button>
 
             <button
-              class="border border-white/50 text-white font-bold uppercase tracking-wide px-6 py-4 rounded hover:bg-black hover:text-white transition-transform duration-500  hover:scale-105"
+              class="border border-white/50 text-black font-bold uppercase tracking-wide px-6 py-4 rounded bg-[#f15a24] hover:text-white transition-transform duration-500 hover:scale-105"
             >
               View Programs
             </button>
           </div>
-          <div class="mt-10 flex gap-8 uppercase ">
+          <div class="mt-10 flex gap-8 uppercase">
             <div>
-              <h2 class="transition-transform duration-500  hover:scale-105">
+              <h2 class="transition-transform duration-500 hover:scale-105">
                 <span class="text-[#f15a24] text-4xl">10+ </span><br />Years
                 Experience
               </h2>
             </div>
             <div>
-              <h2  class="transition-transform duration-500  hover:scale-105">
+              <h2 class="transition-transform duration-500 hover:scale-105">
                 <span class="text-[#f15a24] text-4xl">500+ </span><br />Clients
                 Transformed
               </h2>
             </div>
             <div>
-              <h2  class="transition-transform duration-500  hover:scale-105">
+              <h2 class="transition-transform duration-500 hover:scale-105">
                 <span class="text-[#f15a24] text-4xl">98% </span><br />Success
                 Rate Experience
               </h2>
@@ -159,13 +153,13 @@
           </div>
         </div>
       </div>
-    </header>
+    </nav>
     <!-- about us -->
     <section class="w-full bg-[#18191D] text-white">
       <div
-        class="max-w-7xl p-7 flex items-center gap-10 px-4 py-8 sm-6 flex-col-reverse lg:flex-row mx-auto"
+        class="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-10 px-4 sm:px-6 lg:px-8 py-8"
       >
-        <div class="w-full lg:1/2">
+        <div class="w-full lg:w-1/2">
           <span class="text-[#E85D3A] text-base">MEET YOUR COACH</span>
           <h3 class="mt-6 text-5xl font-black leading-tight lg:text-6xl">
             Mukesh GAHLOT
@@ -186,20 +180,26 @@
             equals extraordinary results.
           </p>
           <div class="text-white flex gap-6 mt-10">
-            <button class="border-1 border-white rounded-sm p-2 transition-transform duration-500  hover:scale-105">
+            <button
+              class="border-1 border-white rounded-sm p-2 transition-transform duration-500 hover:scale-105"
+            >
               4x MR. India
             </button>
-            <button class="border-1 border-white rounded-sm p-2 transition-transform duration-500  hover:scale-105">
+            <button
+              class="border-1 border-white rounded-sm p-2 transition-transform duration-500 hover:scale-105"
+            >
               Fit India Champion
             </button>
-            <button class="border-1 border-white rounded-sm p-2 transition-transform duration-500  hover:scale-105">
+            <button
+              class="border-1 border-white rounded-sm p-2 transition-transform duration-500 hover:scale-105"
+            >
               Fitness Mentor
             </button>
           </div>
         </div>
         <div class="w-full lg:w-1/2">
           <img
-            class="mx-auto h-72 w-full max-w-xl rounded-2xl object-cover sm:h-96 lg:h-[560px]"
+            class="mx-auto h-72 w-full max-w-xl rounded-2xl object-cover sm:h-96 lg:h-[560px] transition-transform duration-500 hover:scale-105"
             src="images/muskesh.jpg"
             alt="coach"
           />
@@ -217,78 +217,48 @@
       </div>
 
       <div
-        class="max-w-7xl gap-10 grid grid-cols-1 rounded-lg sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mx-auto lg:mt-16"
+        class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5"
       >
         <div>
           <img
-            class="w-full h-64 object-cover transition-transform duration-500 ease-in-out hover:scale-[1.2] rounded-1xl"
             src="images/no-excuse.png"
-            alt="dumbbell-section"
+            class="w-full h-64 object-cover rounded-lg"
+            alt="Gym"
           />
         </div>
 
         <div>
           <img
-            class="w-full h-64 object-cover transition-transform duration-500 ease-in-out hover:scale-[1.2]"
             src="images/squats.png"
-            alt="squats-area"
+            class="w-full h-64 object-cover rounded-lg"
+            alt="Squats"
           />
         </div>
 
         <div>
           <img
-            class="w-full h-64 object-cover transition-transform duration-500 ease-in-out hover:scale-[1.2]"
             src="images/treadmil.png"
-            alt="treadmill-area"
+            class="w-full h-64 object-cover rounded-lg"
+            alt="Treadmill"
           />
         </div>
 
         <div>
           <img
-            class="w-full h-64 object-cover transition-transform duration-500 ease-in-out hover:scale-[1.2]"
             src="images/dumbell-press.png"
-            alt="dumbell-press"
+            class="w-full h-64 object-cover rounded-lg"
+            alt="Dumbbell press"
           />
         </div>
+      </div>
 
-        <div>
-          <img
-            class="w-full h-64 object-cover transition-transform duration-500 ease-in-out hover:scale-[1.2]"
-            src="images/girl-workout.png"
-            alt="girl-workout"
-          />
-        </div>
-
-        <div>
-          <img
-            class="w-full h-64 object-cover transition-transform duration-500 ease-in-out hover:scale-[1.2]"
-            src="images/using-strap.png"
-            alt="using-handstrap"
-          />
-        </div>
-
-        <div>
-          <img
-            class="w-full h-64 object-cover transition-transform duration-500 ease-in-out hover:scale-[1.2]"
-            src="images/back-workout.png"
-            alt="backworkout"
-          />
-        </div>
-
-        <div>
-          <img
-            class="w-full h-64 object-cover transition-transform duration-500 ease-in-out hover:scale-[1.2]"
-            src="images/pull-ups.png"
-            alt="pullup-workout"
-          />
-        </div>
-        <div class="flex justify-center">
-          <button
-            class="border border-[#FF6338] bg-[#FF6338] text-white items-center font-bold uppercase tracking-wide px-6 py-4 rounded hover:bg-transparent hover:text-[#FF6338] transition-transform duration-500 ease-in-out hover:scale-105"
-          >
-            View MORE
-          </button>
-        </div>
+      <div class="flex justify-center mt-10">
+        <a
+          href="gallery.html"
+          class="border border-[#FF6338] bg-[#FF6338] text-white font-bold px-6 py-4 rounded hover:bg-transparent hover:text-[#FF6338] transition duration-300"
+        >
+          VIEW MORE
+        </a>
       </div>
     </section>
     <!-- membership  -->
@@ -448,7 +418,7 @@
           </div>
           <div class="flex justify-center">
             <button
-              class="w-[180px] h-[40px] border border-[#FF6338] bg-[#FF6338] text-white font-bold rounded hover:bg-transparent hover:text-[#FF6338]transition-transform duration-500 hover:scale-105"
+              class="w-[180px] h-[40px] border border-[#FF6338] bg-[#FF6338] text-white font-bold rounded hover:bg-transparent hover:text-[#FF6338] transition-transform duration-500 hover:scale-105"
             >
               View plans
             </button>
@@ -586,7 +556,7 @@
                 </ul>
               </div>
             </div>
-            <div class="ml-3 text-justify p-2 text-white">
+            <div class="ml-3 text-left p-2 text-white">
               <p class="p-4">
                 "Training with Mukesh Gahlot prepared me to win my first
                 bodybuilding competition. His attention to detail and knowledge
@@ -642,8 +612,8 @@
                 </ul>
               </div>
             </div>
-            <div class="ml-3 text-justify p-2 text-white">
-              <p class="p-4">
+            <div class="ml-3 text-left p-2 text-white">
+              <p class="p-6">
                 "I went from barely running a mile to completing my first Hyrox.
                 Muskesh Gahlot believed in me when I didn't believe in myself."
               </p>
@@ -708,7 +678,7 @@
                   href="tel:78909-78934"
                   class="text-white text-base sm:text-lg font-medium hover:text-[#ff642d] transition"
                 >
-                 78909-78934
+                  78909-78934
                 </a>
               </div>
             </div>
@@ -744,7 +714,7 @@
             <form class="flex flex-col gap-6">
               <div class="flex flex-col sm:flex-row gap-5">
                 <div class="w-full sm:w-1/2">
-                  <label class="text-sm sm:text-base font-medium mb-3">
+                  <label class="block text-sm sm:text-base font-medium mb-3">
                     First Name
                   </label>
 
@@ -757,7 +727,7 @@
                 </div>
 
                 <div class="w-full sm:w-1/2">
-                  <label class="text-sm sm:text-base font-medium mb-3">
+                  <label class="block text-sm sm:text-base font-medium mb-3">
                     Last Name
                   </label>
 
@@ -771,7 +741,7 @@
               </div>
 
               <div>
-                <label class="text-sm sm:text-base font-medium mb-3">
+                <label class="block text-sm sm:text-base font-medium mb-3">
                   Email
                 </label>
 
@@ -784,7 +754,7 @@
               </div>
 
               <div>
-                <label class="text-sm sm:text-base font-medium mb-3">
+                <label class="block text-sm sm:text-base font-medium mb-3">
                   Phone
                 </label>
 
@@ -797,7 +767,7 @@
               </div>
 
               <div>
-                <label class="text-sm sm:text-base font-medium mb-3">
+                <label class="block text-sm sm:text-base font-medium mb-3">
                   What are your fitness goals?
                 </label>
 
@@ -813,7 +783,7 @@
                 type="submit"
                 class="w-full bg-[#ff642d] text-black font-bold uppercase text-base sm:text-lg py-5 rounded-lg hover:bg-white transition duration-300"
               >
-                Book Your Slot 
+                Book Your Slot
               </button>
             </form>
           </div>
@@ -828,23 +798,48 @@
         <h2
           class="text-xl sm:text-2xl md:text-3xl text-white font-light text-center"
         >
-          ELITE<span class="text-[#ff642d]">FITNESS</span> 
+          ELITE<span class="text-[#ff642d]">FITNESS</span>
         </h2>
 
         <nav
           class="flex flex-wrap justify-center gap-6 sm:gap-8 text-sm sm:text-base"
         >
-          <a href="#home" class="hover:text-[#ff642d] transition">Home</a>
-          <a href="#gallery" class="hover:text-[#ff642d] transition"
+          <a href="gallery.html" class="hover:text-[#ff642d] transition"
             >Gallery</a
           >
-          <a href="#membership" class="hover:text-[#ff642d] transition">Membership</a>
-          <a href="#reviews" class="hover:text-[#ff642d] transition">Reviews</a>
-           <a href="#location" class="hover:text-[#ff642d] transition">Location</a>
-          <a href="#contact us" class="hover:text-[#ff642d] transition">About Us</a>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-whatsapp"></i>
+          <a href="membership.html" class="hover:text-[#ff642d] transition"
+            >Membership</a
+          >
+          <a href="reviews.html" class="hover:text-[#ff642d] transition"
+            >Reviews</a
+          >
+          <a href="location.html" class="hover:text-[#ff642d] transition"
+            >Location</a
+          >
+          <a href="book-slot.html" class="hover:text-[#ff642d] transition"
+            >Contact Us</a
+          >
+          <ul class="flex gap-5">
+            <li>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-instagram text-pink-500 text-xl"></i>
+              </a>
+            </li>
 
+            <li>
+              <a
+                href="https://wa.me/917890978934"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-whatsapp text-green-400 text-xl"></i>
+              </a>
+            </li>
+          </ul>
         </nav>
 
         <p class="text-sm sm:text-base text-center">
