@@ -15,40 +15,32 @@
     <link rel="icon" type="image/png" href="./images/elite logo.png" />
   </head>
   <body>
-    <nav
-      class="w-full relative min-h-screen bg-[url('./images/gym-profile.jpg')] bg-cover bg-center bg-no-repeat lg:bg-right text-white overflow-hidden"
-    >
-      <div class="absolute inset-0 bg-black/60 z-0"></div>
-
-      <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div
-          class="flex lg:flex-row lg:items-center lg:justify-between py-6 px-8 gap-6 md:py-4 md:px-5 md:gap-4"
-        >
-          <div
-            class="block md:flex flex-row items-center lg:items-start shrink-0"
-          >
-            <a href="index.html" class="items-center lg:items-start">
+    <header class="w-full bg-black text-white sticky top-0 z-50 shadow-lg">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between min-h-[75px] py-3">
+          <div class="shrink-0">
+            <a href="index.html" class="flex items-center gap-2">
               <img
-                class="w-auto h-[45px]  ml-10 sm:h-[50px] md:h-[55px] lg:h-[60px] transition-transform duration-500 hover:scale-105"
+                class="h-[42px] sm:h-[48px] md:h-[52px] lg:h-[55px] w-auto transition-transform duration-300 hover:scale-105"
                 src="images/elite logo.png"
                 alt="Elite Fitness Gym Logo"
               />
 
               <h2
-                class="text-sm sm:text-base md:text-lg lg:text-xl font-bold italic mt-1"
+                class="text-xs sm:text-sm md:text-base lg:text-lg font-bold italic"
               >
                 𝐄𝐋𝐈𝐓𝐄 𝐅𝐈𝐓𝐍𝐄𝐒𝐒
               </h2>
             </a>
           </div>
 
-          <div
-            class="w-full lg:w-auto hidden md:flex lg:items-center gap-2 sm:gap-3 md:gap-5 lg:gap-8 text-sm md:text-base lg:text-lg font-bold text-center"
+          <nav
+            class="hidden md:flex items-center gap-2 lg:gap-5 text-sm lg:text-base font-bold"
           >
             <a
               href="gallery.html"
               target="_blank"
-              class="px-3 py-2 rounded hover:bg-white hover:text-black transition duration-300 whitespace-nowrap"
+              class="px-3 py-2 rounded-md hover:bg-white hover:text-black duration-300"
             >
               GALLERY
             </a>
@@ -56,37 +48,42 @@
             <a
               href="membership.html"
               target="_blank"
-              class="px-3 py-2 rounded hover:bg-white hover:text-black transition duration-300 whitespace-nowrap"
+              class="px-3 py-2 rounded-md hover:bg-white hover:text-black duration-300"
             >
               MEMBERSHIP
             </a>
+
             <a
               href="reviews.html"
               target="_blank"
-              class="px-3 py-2 rounded hover:bg-white hover:text-black transition duration-300 whitespace-nowrap"
+              class="px-3 py-2 rounded-md hover:bg-white hover:text-black duration-300"
             >
               REVIEWS
             </a>
+
             <a
               href="location.html"
               target="_blank"
-              class="px-3 py-2 rounded hover:bg-white hover:text-black transition duration-300 whitespace-nowrap"
+              class="px-3 py-2 rounded-md hover:bg-white hover:text-black duration-300"
             >
               LOCATION
             </a>
-          </div>
+          </nav>
 
-          <button class="flex justify-center lg:justify-end lg:ml-6 shrink-0">
-            <a
-              href="book-slot.html"
-              target="_blank"
-              class="flex items-center justify-center bg-[#ff8e28] text-white w-[160px] sm:w-[170px] md:w-[180px] lg:w-[160px] h-[45px] sm:h-[48px] font-bold text-xs sm:text-sm hover:bg-white hover:text-black transition-transform duration-500 ease-in-out hover:scale-105"
-            >
-              BOOK YOUR SLOT
-            </a>
-          </button>
+          <a
+            href="book-slot.html"
+            class="flex items-center justify-center bg-[#ff8e28] text-white w-[140px] lg:w-[155px] h-[42px] rounded-md font-bold text-xs lg:text-sm hover:bg-white hover:text-black transition duration-300 hover:scale-105"
+          >
+            BOOK YOUR SLOT
+          </a>
         </div>
       </div>
+    </header>
+    <!-- hero-section  -->
+    <section
+      class="w-full relative min-h-screen bg-[url('./images/gym-profile.jpg')] bg-cover md:bg-right bg-no-repeat bg-center text-white overflow-hidden"
+    >
+      <div class="absolute inset-0 bg-black/60 z-0"></div>
 
       <div
         class="relative z-10 w-full max-w-7xl mx-auto px-5 sm:px-8 lg:px-16 pt-10 sm:pt-16 lg:pt-20 pb-16"
@@ -151,7 +148,7 @@
           </div>
         </div>
       </div>
-    </nav>
+    </section>
     <section class="bg-[#18191D]">
       <div class="max-w-7xl mx-auto">
         <div>
